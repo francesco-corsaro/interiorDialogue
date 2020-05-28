@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (isset($_POST['email']) && isset($_POST['nome']) && isset($_POST['pwd1'])&& isset($_POST['pwd2'])) {
+if (isset($_POST['email']) && isset($_POST['username']) && isset($_POST['pwd1'])&& isset($_POST['pwd2'])) {
     include 'backEnd/backRegistrazione.php';
 }
 ?>

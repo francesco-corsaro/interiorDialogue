@@ -14,7 +14,7 @@ session_start();
         	<h1>Dialogo Interiore</h1>
         	
         	<div class="roi">
-        	  Ti abbiamo inviatio un messaggio all'indirizzo <?php echo $_POST['email'] ?>.<br>
+        	  Ti abbiamo inviatio un messaggio all'indirizzo <?php echo $_SESSION['utente'] ?>.<br>
         	  per completare la registrazione clicca sul link che trovi nell'email
         	</div>
          </div>

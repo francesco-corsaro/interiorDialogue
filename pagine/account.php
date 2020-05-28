@@ -1,5 +1,8 @@
 <?php
 session_start();
+if (isset($_POST['nome']) && isset($_POST['cognome'])&& isset($_POST['eta'])&& isset($_POST['genere']) ) {
+    require 'backEnd/backAccount.php';
+}
 ?>
 <html>
     <head>

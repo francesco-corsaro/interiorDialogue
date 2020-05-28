@@ -15,7 +15,7 @@ function update_account( $nome,$cognome, $eta,$genere,$email) {
     }
     
     // prepare and bind
-    $stmt = $conn->prepare("UPDATE registrazione SET nome=? cognome=?, eta=?, genere=?  WHERE email=? ");
+    $stmt = $conn->prepare("UPDATE registrazione SET nome=?, cognome=?, eta=?, genere=?  WHERE email=? ");
     $stmt->bind_param("ssiis",$nome,$cognome, $eta,$genere,$email);
    
    
