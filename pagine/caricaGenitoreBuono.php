@@ -5,10 +5,10 @@ session_start();
 <html>
 <body>
 
-<form action="backEnd/backGenCattivo.php" method="post" enctype="multipart/form-data">
+<form action="backEnd/backGenBuono.php" method="post" enctype="multipart/form-data">
     Seleziona l'immagine da caricare<br>
-    <p>Inserisci il tuo genitore cattivo</p>
-    <input type="file" name="fileToUpload" id="fileToUpload">  
+    <p>Inserisci il tuo genitore buono</p>
+    <input type="file" name="fileToUpload" id="fileToUpload">
     <br>
     
     <input type="text" name="proprietario" id="proprietario" placeholder="Inserisci il nome">
