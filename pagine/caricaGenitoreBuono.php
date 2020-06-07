@@ -6,7 +6,7 @@ session_start();
 <body>
 
 <form action="backEnd/backGenBuono.php" method="post" enctype="multipart/form-data">
-    Seleziona l'immagine da caricare<br>
+    <p>Seleziona l'immagine da caricare</p>
     <p>Inserisci il tuo genitore buono</p>
     <input type="file" name="fileToUpload" id="fileToUpload">
     <br>

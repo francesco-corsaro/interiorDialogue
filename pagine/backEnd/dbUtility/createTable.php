@@ -1,13 +1,15 @@
 <?php
-
+function create_table($tabel) {
+    $tabel=str_replace('@', '', $tabel);
+    $tabel=str_replace('.', '', $tabel);
+    
 include 'connect.php';
 
 // sql to create table
 $sql = "CREATE TABLE $tabel (
 progressivo INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-firstname VARCHAR(30) NOT NULL,
-lastname VARCHAR(30) NOT NULL,
-email VARCHAR(50),
+partOfMe VARCHAR(30) NOT NULL,
+message VARCHAR(30) NOT NULL,
 reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
 
@@ -18,4 +20,11 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
+}
+/*
+$nome='pro.va@prova.it';
+$nome=str_replace('@', '', $nome);
+$nome=str_replace('.', '', $nome);
+echo '<br>'.$nome.'<br>';
+create_table('p.r.o.va@pro.va.it');*/
 ?>

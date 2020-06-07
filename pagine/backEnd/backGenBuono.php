@@ -49,6 +49,10 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
             include 'dbUtility/insert_path_buono.php';
             
             insert_path_buono($_SESSION['utente'],basename($_FILES["fileToUpload"]["name"]));
+            
+            include 'dbUtility/createTable.php';
+            create_table($_SESSION['utente']);
+            
             //header("location: http://mytraining.altervista.org/interiorDialogue/pagine/DAQUALCHEPARTE.php");
             
         } else {
