@@ -1,0 +1,19 @@
+
+.lft{
+  clear:both;
+  float: left;
+  display: block;
+}
+
+.rght{
+    clear:both;
+    float: right ;
+    display: block;
+}
+
+.wirting{
+  display: block;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
